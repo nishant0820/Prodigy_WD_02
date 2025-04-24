@@ -17,9 +17,9 @@
                 </div>
             </div>
             <div class="button-wrapper">
-                <button class="button">Reset</button>
+                <button class="button reset hidden">Reset</button>
                 <button class="button play">Play</button>
-                <button class="button">Lap</button>
+                <button class="button lap hidden">Lap</button>
             </div>
         </div>
         <ul class="laps">
@@ -31,5 +31,30 @@
         </ul>
     </div>
 
+    <script>
+        const playButton = document.getElementsByClassName("play")[0];
+        const lapButton = document.getElementsByClassName("lap")[0];
+        const resetButton = document.getElementsByClassName("reset")[0];
+
+        let isPlay = false;
+
+        const toggleButton = () => {
+            lapButton.classList.remove("hidden");
+            resetButton.classList.remove("hidden");
+        }
+
+        const play = () => {
+            if(!isPlay){
+                playButton.innerHTML = 'Pause';
+                isPlay = true;
+            } else {
+                playButton.innerHTML = 'Play';
+                isPlay = false;
+            }
+            toggleButton();
+        }
+
+        playButton.addEventListener("click", play);
+    </script>
 </body>
 </html>
