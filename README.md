@@ -16,12 +16,6 @@ A simple and responsive stopwatch web application built using HTML, CSS, and Jav
 - **CSS3** – Styling and responsive design
 - **JavaScript (ES6)** – Functionality and time handling
 
-## 📸 Screenshots
-
-![Stopwatch Screenshot](screenshot.png)
-
-> *(Add your screenshot in the project folder and update the file name above if needed.)*
-
 ## 💻 Usage
 
 1. Clone the repository:
